@@ -4,7 +4,7 @@ set -e
 gitSecret="/root/.ssh/id_rsa"
 mkdir -p /root/.ssh
 if [ -n "$GIT_SYNC_PRIVATE_KEY" ]; then
-    echo "$GIT_SYNC_PRIVATE_KEY" > "$gitSecret"
+    echo -e "$GIT_SYNC_PRIVATE_KEY" > "$gitSecret"
 fi
 if [ -f "$gitSecret" ]; then
     chmod 400 "$gitSecret"
