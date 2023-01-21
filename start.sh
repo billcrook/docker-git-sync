@@ -11,8 +11,6 @@ if [ -f "$gitSecret" ]; then
     chown $(id -u):$(id -g) "$gitSecret"
 fi
 
-sleep 1000000
-
 if [ -z "$GIT_SYNC_REPO" ]; then
     echo "No git repository specified in GIT_SYNC_REPO"
     exit 1
