@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 gitSecret="/root/.ssh/id_rsa"
