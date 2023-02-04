@@ -33,6 +33,8 @@ if [ -d "$groot" ]; then
     find "$groot" -mindepth 1 -delete
 fi
 
+git config --global --add safe.directory "$groot"
+
 # var flMaxSyncFailures = flag.Int("max-sync-failures", envInt("GIT_SYNC_MAX_SYNC_FAILURES", 0),
 # 	"the number of consecutive failures allowed before aborting (the first pull must succeed)")
 
